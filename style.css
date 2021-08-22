@@ -317,8 +317,11 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    /* margin-right: 106px; */
     float: right;
+    /* width: 150px;
+    display: flex;
+    justify-content: space-between; */
     z-index: 1;
 }
 
@@ -376,16 +379,29 @@ a:hover {
     color:#F3976C;
 }
 
+
 .footer__li {
     padding: 5px 0px;
 }
 .footer__li__text {
     color: #200F0F;
 }
+.header__modif_a {
+    text-decoration: none;
+}
 
 /* modification pour seo */
 
 @media (min-width: 768px) {
+    .li_page2-none {
+        display: none;
+    }
+    .navbar-modif{
+        margin-right: 106px;
+        width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -757,13 +773,14 @@ h4 {
     margin-bottom: 14px;
     margin-top: 24px;
 }
+/* modification de la couleur blanche sur certains éléments pour ne respectais pas le ration de constrate (accésibilité) */
 .white {
     color: #FFFFFF!important;
 }
 .black {
     color: #200F0F!important;
 }
-
+/* modification de la couleur blanche sur certains éléments pour ne respectais pas le ration de constrate (accésibilité) */
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -915,6 +932,11 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    /* modification de largeur pour rendre les images responsives   */
+    .img_text--modif {
+        width: 100%;
+    }
+    /* modification de largeur pour rendre les images responsives   */
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -956,6 +978,9 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
+    /* .li_page2-none {
+        display:initial;
+    } */
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
